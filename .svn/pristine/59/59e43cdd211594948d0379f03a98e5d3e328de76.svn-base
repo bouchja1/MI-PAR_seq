@@ -1,6 +1,0 @@
-build/Debug/Cygwin_4.x-Windows/WorkerParalel.o: WorkerParalel.cpp \
-  WorkerParalel.h TaskCrate.h
-
-WorkerParalel.h:
-
-TaskCrate.h:
