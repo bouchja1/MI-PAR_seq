@@ -1,0 +1,30 @@
+/* 
+ * File:   LeafNode.cpp
+ * Author: Babu
+ * 
+ * Created on 20. říjen 2012, 21:22
+ */
+
+#include "LeafNode.h"
+
+LeafNode::LeafNode(unsigned int maxHammWeight, unsigned int level, bool value) : Node(maxHammWeight, level, value) {
+    this->isLeaf = true;
+}
+
+LeafNode::~LeafNode() {
+}
+
+//TODO pomoci vyjimky
+
+Node* LeafNode::makeLeftTrueNode(unsigned int treeHeight) {
+    cerr << "CAN´T build new node this is LEAF!" << endl;
+    return NULL;
+}
+
+//TODO pomoci vyjimky
+
+Node* LeafNode::makeRightFalseNode(unsigned int treeHeight) {
+    cerr << "CAN´T build new node this is LEAF!" << endl;
+    return NULL;
+}
+

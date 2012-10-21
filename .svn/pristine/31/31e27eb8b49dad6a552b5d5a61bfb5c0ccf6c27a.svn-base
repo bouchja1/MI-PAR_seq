@@ -1,0 +1,46 @@
+/* 
+ * File:   Node.h
+ * Author: Babu
+ *
+ * Created on 20. říjen 2012, 21:14
+ */
+
+#ifndef NODE_H
+#define	NODE_H
+
+#include "BinaryVector.h"
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+class Node {
+public:
+    Node(unsigned int maxHammWeight,unsigned int level,bool value);   
+    virtual ~Node();
+    
+    void printNode();
+    
+    virtual Node* makeRightFalseNode(unsigned int treeHeight)=0;
+    virtual Node* makeLeftTrueNode(unsigned int treeHeight)=0;
+    
+        
+    //GETTERS AND SETTERS---------------------------------------------------------
+    unsigned int getMaximalHammWeight() const {
+        return maxHammWeight;
+    }
+
+    unsigned int getLevel() const {
+        return level;
+    }
+    
+protected:
+    unsigned int maxHammWeight;
+    unsigned int level;
+    bool isLeaf;
+    bool value;
+private:
+
+};
+
+#endif	/* NODE_H */
+

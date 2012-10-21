@@ -1,0 +1,21 @@
+/* 
+ * File:   TaskCrate.cpp
+ * Author: Babu
+ * 
+ * Created on 20. říjen 2012, 20:59
+ */
+
+#include "TaskCrate.h"
+
+TaskCrate::TaskCrate(bool* resultingConfigurationArray, unsigned int width,
+        unsigned int height, unsigned int iterations, unsigned int aMistake) {
+    this->resultingConfigurationArray=resultingConfigurationArray;
+    this->aMistake=aMistake;
+    this->width=width;
+    this->height=height;
+    this->iterations=iterations;
+}
+
+TaskCrate::~TaskCrate() {
+    delete resultingConfigurationArray;
+}

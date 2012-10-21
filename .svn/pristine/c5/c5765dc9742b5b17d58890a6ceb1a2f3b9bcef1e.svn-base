@@ -1,0 +1,6 @@
+build/Debug/Cygwin_4.x-Windows/TaskParser.o: TaskParser.cpp TaskParser.h \
+  TaskCrate.h
+
+TaskParser.h:
+
+TaskCrate.h:

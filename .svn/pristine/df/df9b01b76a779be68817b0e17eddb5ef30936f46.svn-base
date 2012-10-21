@@ -1,0 +1,28 @@
+/* 
+ * File:   Worker.cpp
+ * Author: Babu
+ * 
+ * Created on 20. říjen 2012, 22:53
+ */
+
+#include "Worker.h"
+
+Worker::Worker(TaskCrate* task,bool* startArray,Node* startNode,bool verbose) {
+    this->task=task;
+    this->startArray=startArray;
+    this->startNode=startNode;
+    this->verbose=verbose;
+}
+
+Worker::~Worker() {
+    //start array shloud be deleted in result crate
+    delete startArray;
+    delete startNode;
+}
+
+void Worker::work(){
+    
+}
+
+
+

@@ -1,0 +1,27 @@
+/* 
+ * File:   ParentNode.h
+ * Author: Babu
+ *
+ * Created on 20. říjen 2012, 21:31
+ */
+
+#ifndef PARENTNODE_H
+#define	PARENTNODE_H
+
+#include "Node.h"
+
+
+class ParentNode : public Node{
+public:
+    ParentNode(unsigned int maxHammWeight,unsigned int level,bool value);
+    virtual ~ParentNode();
+    
+    virtual Node* makeRightFalseNode(unsigned int treeHeight);
+    virtual Node* makeLeftTrueNode(unsigned int treeHeight);    
+    
+private:
+
+};
+
+#endif	/* PARENTNODE_H */
+
